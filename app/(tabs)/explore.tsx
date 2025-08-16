@@ -4,6 +4,7 @@ import { Platform, StyleSheet } from 'react-native';
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
+import { TamaguiExample } from '@/components/TamaguiExample';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
@@ -91,6 +92,16 @@ export default function TabTwoScreen() {
             </ThemedText>
           ),
         })}
+      </Collapsible>
+      <Collapsible title="Tamagui Design System">
+        <ThemedText>
+          This app now includes Tamagui, a universal React design system. Below is an example of
+          Tamagui components in action.
+        </ThemedText>
+        <TamaguiExample />
+        <ExternalLink href="https://tamagui.dev">
+          <ThemedText type="link">Learn more about Tamagui</ThemedText>
+        </ExternalLink>
       </Collapsible>
     </ParallaxScrollView>
   );
