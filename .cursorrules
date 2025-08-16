@@ -1,0 +1,59 @@
+# Citizenship Geo - AI-First Development Guidelines
+
+## Project Overview
+This is a React Native/Expo application for citizenship and geographic features. The project uses:
+- Expo Router for file-based routing
+- TypeScript for type safety
+- React Native with Expo SDK
+- File-based routing in the `app/` directory
+
+## Code Style & Patterns
+- Use TypeScript for all new files
+- Follow React Native best practices
+- Use functional components with hooks
+- Implement proper error boundaries
+- Use Expo's built-in components when possible
+- Follow the existing component structure in `components/`
+
+## File Organization
+- `app/` - Expo Router pages and layouts
+- `components/` - Reusable UI components
+- `hooks/` - Custom React hooks
+- `constants/` - App constants and configuration
+- `types/` - TypeScript type definitions
+- `utils/` - Utility functions
+- `services/` - API calls and external services
+
+## Naming Conventions
+- Components: PascalCase (e.g., `UserProfile.tsx`)
+- Files: kebab-case for utilities, PascalCase for components
+- Functions: camelCase
+- Constants: UPPER_SNAKE_CASE
+- Types/Interfaces: PascalCase with descriptive names
+
+## AI Development Guidelines
+- Always include proper TypeScript types
+- Add JSDoc comments for complex functions
+- Use descriptive variable and function names
+- Implement proper error handling
+- Consider mobile performance and accessibility
+- Test on both iOS and Android when possible
+
+## Common Patterns
+- Use `useColorScheme()` hook for theme support
+- Implement proper loading states
+- Handle network errors gracefully
+- Use Expo's built-in navigation patterns
+- Follow the existing theming system in `constants/Colors.ts`
+
+## Dependencies
+- Prefer Expo SDK packages over third-party alternatives
+- Use `@expo/vector-icons` for icons
+- Leverage React Navigation for complex navigation
+- Use Expo's image optimization features
+
+## Testing Considerations
+- Write unit tests for utility functions
+- Test components with different screen sizes
+- Consider accessibility testing
+- Test on both platforms when possible
